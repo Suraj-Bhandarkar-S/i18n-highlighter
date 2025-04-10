@@ -2,8 +2,12 @@
 
 All notable changes to the "i18n-highlighter" extension will be documented in this file.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+## [0.0.1] – 2025-04-10
 
-## [Unreleased]
+### 🚀 Initial Release
 
-- Initial release
+- Detects and highlights hardcoded strings in HTML, JSX, TSX files  
+- Shows warnings in the Problems tab for missing i18n usage  
+- Ignores dynamic content wrapped in `{}` or string literals  
+- Fully tested string matching engine with regex  
+- Minimal, clean 128x128 icon included  

@@ -1,8 +1,14 @@
 {
   "name": "i18n-highlighter",
   "displayName": "i18n-highlighter",
+  "publisher": "suraj-bhandarkar-s",
+  "icon": "icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Suraj-Bhandarkar-S/i18n-highlighter.git"
+  },
   "description": "Highlights hardcoded strings in HTML, JSX, and other files to help identify missing i18n translations. A handy tool for internationalization (i18n) workflows.",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "engines": {
     "vscode": "^1.99.0"
   },
@@ -20,10 +26,6 @@
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
-      {
-        "command": "i18n-highlighter.helloWorld",
-        "title": "Hello World"
-      }
     ]
   },
   "scripts": {
