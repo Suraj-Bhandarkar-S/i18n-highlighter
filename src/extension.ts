@@ -138,7 +138,7 @@ export function activate(context: vscode.ExtensionContext) {
       "i18n-highlighter.ignoreString",
       async () => {
         const editor = vscode.window.activeTextEditor;
-        if (!editor) return;
+        if (!editor) {return;};
 
         const pos = editor.selection.active;
         const line = editor.document.lineAt(pos.line);
