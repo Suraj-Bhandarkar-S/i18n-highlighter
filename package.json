@@ -8,7 +8,39 @@
     "url": "https://github.com/Suraj-Bhandarkar-S/i18n-highlighter.git"
   },
   "description": "Highlights hardcoded strings in HTML, JSX, and other files to help identify missing i18n translations. A handy tool for internationalization (i18n) workflows.",
-  "version": "0.0.4",
+  "version": "0.0.5",
+  "contributes": {
+    "configuration": {
+      "type": "object",
+      "title": "i18n Highlighter Settings",
+      "properties": {
+        "i18n-highlighter.scanOnStartup": {
+          "type": "boolean",
+          "default": false,
+          "description": "Automatically scan all workspace files for i18n issues when VS Code starts"
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "i18n-highlighter.scanWorkspace",
+        "title": "i18n: Scan Workspace for i18n Issues"
+      },
+      {
+        "command": "i18n-highlighter.ignoreString",
+        "title": "Ignore this string (i18n-highlighter)"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+      {
+        "command": "i18n-highlighter.ignoreString",
+        "when": "editorHasSelection",
+        "group": "navigation"
+      }
+      ]
+    }
+  },
   "engines": {
     "vscode": "^1.99.0"
   },
@@ -24,10 +56,6 @@
     "onLanguage:typescriptreact"
   ],
   "main": "./dist/extension.js",
-  "contributes": {
-    "commands": [
-    ]
-  },
   "scripts": {
     "vscode:prepublish": "npm run package",
     "compile": "npm run check-types && npm run lint && node esbuild.js",
