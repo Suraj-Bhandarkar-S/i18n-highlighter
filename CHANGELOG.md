@@ -4,6 +4,17 @@ All notable changes to the "i18n-highlighter" extension will be documented in th
 
 ---
 
+## [0.0.8] – 2025-04-11
+
+### ✨ Smarter Matching & Regex Boost
+
+- Now detects strings like `by`, `Template`, `Login` even outside tags
+- Still ignores identifiers like `useState`, `VariantProps`
+- Handles JSX edge cases more accurately
+- Fixes false negatives in raw JSX blocks
+
+---
+
 ## [0.0.5] – 2025-04-11
 
 ### 💡 New Feature
