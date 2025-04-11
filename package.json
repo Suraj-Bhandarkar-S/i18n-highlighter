@@ -8,7 +8,7 @@
     "url": "https://github.com/Suraj-Bhandarkar-S/i18n-highlighter.git"
   },
   "description": "Highlights hardcoded strings in HTML, JSX, and other files to help identify missing i18n translations. A handy tool for internationalization (i18n) workflows.",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "contributes": {
     "configuration": {
       "type": "object",
@@ -33,16 +33,16 @@
     ],
     "menus": {
       "editor/context": [
-      {
-        "command": "i18n-highlighter.ignoreString",
-        "when": "editorHasSelection",
-        "group": "navigation"
-      }
+        {
+          "command": "i18n-highlighter.ignoreString",
+          "when": "editorHasSelection",
+          "group": "navigation"
+        }
       ]
     }
   },
   "engines": {
-    "vscode": "^1.99.0"
+    "vscode": "^1.75.0"
   },
   "categories": [
     "Other"
@@ -74,7 +74,7 @@
   "devDependencies": {
     "@types/mocha": "^10.0.10",
     "@types/node": "20.x",
-    "@types/vscode": "^1.99.0",
+    "@types/vscode": "^1.75.0",
     "@typescript-eslint/eslint-plugin": "^8.28.0",
     "@typescript-eslint/parser": "^8.28.0",
     "@vscode/test-cli": "^0.0.10",
